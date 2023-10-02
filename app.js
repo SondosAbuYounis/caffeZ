@@ -12,18 +12,13 @@ let gender = prompt("Are you a: " , "Male, Female");
 function getGender() {
     var gender = "";
   
-    while (
-      gender.toLowerCase() !== "male" &&
-      gender.toLowerCase() !== "female"
-    ) {
+    while (gender.toLowerCase() !== "male" && gender.toLowerCase() !== "female") {
       gender = prompt("Are you a: ", "Male, Female");
     }
-  
-    alert(gender);
-  }
+    }
   
   getGender();
-  
+
 if ( gender == "male"  ||  gender == "Male" ) {
     window.alert("Hello Mr. " + person );
     } else if (gender == "female"  ||  gender == "Female"){
