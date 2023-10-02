@@ -22,9 +22,7 @@ function getGender() {
                  } else {
                   window.alert ("Hello  " + person);
                  }
-      
     }
-  
   getGender();
 
 
