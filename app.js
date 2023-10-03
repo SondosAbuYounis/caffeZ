@@ -46,6 +46,49 @@ for (d=0; d< array.length; d++){
 
 
 
+// const conDi = document.querySelector('#personName');
+// conDi.textContent="hiiiiiii";
+
+let perName = document.createElement("div");
+perName.id= 'personName';
+let parag = document.createElement("p");
+parag.textContent=`${person}`;
+perName.appendChild(parag);
+
+
+let list = document.createElement("ul");
+perName.appendChild(list);
+let perGen = document.createElement("li");
+perGen.textContent=`Gender: ${gen}`;
+list.appendChild(perGen);
+let driTy = document.createElement("li");
+driTy.textContent=`Drink: ${typeOfDrink} ${nameOfDrink}`;
+list.appendChild(driTy);
+// let driNam = document.createElement("li");
+// list.appendChild(driNam);
+
+// document.conDi.appendChild(perName);
+
+
+
+// document.body.insertBefore(perName, container);
+// perName.classList.add('centered');
+document.body.appendChild(perName);
+
+// object.appendChild(perName);
+
+
+
+
+
+// let mmm = document.createElement("div");
+// parag.textContent="Usersname";
+// conDi.appendChild(mmm);
+
+
+
+
+
 
 
 
