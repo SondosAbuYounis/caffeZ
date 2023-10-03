@@ -14,17 +14,21 @@ function getGender() {
   
     while (gender.toLowerCase() !== "male" && gender.toLowerCase() !== "female") {
       gender = prompt("Are you a: ", "Male, Female");
-    }
-    if ( gender == "male"  ||  gender == "Male" ) {
-        window.alert("Hello Mr. " + person );
-        } else if (gender == "female"  ||  gender == "Female"){
-                  window.alert("Hello Mrs. " + person); 
-                 } else {
-                  window.alert ("Hello  " + person);
-                 }
-    }
-  getGender();
 
+    }
+    return gender;
+    }
+
+    var gen=getGender();
+  
+
+  if ( gen == "male"  ||  gen == "Male" ) {
+    window.alert("Hello Mr. " + person );
+    } else if (gen == "female"  ||  gen == "Female"){
+              window.alert("Hello Mrs. " + person); 
+             } else {
+              window.alert ("Hello  " + person);
+             }
 
 let typeOfDrink = prompt("would you like a hot or cold drink?", "Hot, Cold");
 let nameOfDrink = prompt("Please write the name of your drink:");
