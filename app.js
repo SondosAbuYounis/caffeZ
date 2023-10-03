@@ -4,7 +4,7 @@ let person = prompt("Please enter your name:");
 if (person == null || person == "") {
     text = "User cancelled the prompt.";
   }
-let gender = prompt("Are you a: " , "Male, Female");
+// let gender = prompt("Are you a: " , "Male, Female");
 
 // while (gender !==  "male" && gender !==  "Male" && gender !==  "female" && gender !==  "Female") {
 //     gender = prompt("Are you a: " , "Male, Female");
