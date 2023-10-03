@@ -35,10 +35,13 @@ let nameOfDrink = prompt("Please write the name of your drink:");
 
 let array = [];
 array.push(person);
-array.push(gender);
+array.push(gen);
 array.push(typeOfDrink);
 array.push(nameOfDrink);
-console.log(array);
+
+for (d=0; d< array.length; d++){
+    console.log(array[d]);
+}
 
 
 
