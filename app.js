@@ -64,9 +64,7 @@
 // ----------------------------------------------------
 
 // Info collected using Form 
-var userNameVal = document.getElementById("userName").value;
-var genderVal = document.getElementById("genderVal").value;
-var naDrVal = document.getElementById("naDr").value;
+
 
 // let userNameVal = document.createElement("li");
 // userNameVal.textContent=`Name: ${userName}`;
@@ -77,11 +75,17 @@ var naDrVal = document.getElementById("naDr").value;
 // let naDrVal = document.createElement("li");
 // naDrVal.textContent=`Drink: ${naDr}`;
 // orderInfoVal.appendChild(naDrVal);
+document.getElementById("formBg").addEventListener("submit", function(event) {
+event.preventDefault();
 
+var userNameVal = document.getElementById("userName").value;
+var genderVal = document.getElementById("genderVal").value;
+var naDrVal = document.getElementById("naDr").value;
 
 var checkbox = document.getElementById("boxx"); // Get the checkbox element by its ID
 var checkboxa = document.getElementById("boxxa"); // Get the checkbox element by its ID
 var drinkTemp = [];
+
 if (checkbox.checked) {
   drinkTyype.push(checkbox.value);
 }
@@ -95,3 +99,4 @@ resultText += "Drink: " + drinkTemperature.join(", ") + naDrVal;
 
 document.getElementById("orderInfoVal").innerHTML = resultText;
 
+});
